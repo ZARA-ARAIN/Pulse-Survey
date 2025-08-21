@@ -14,7 +14,7 @@
 
   <style>
     :root {
-      --ig-gradient: linear-gradient(135deg, #9718ffff, #bc3ae4ff, #e551e5ff, #f75aa8ff, #ffa238ff) !important;
+      --ig-gradient: linear-gradient(90deg, #a635d6, #ff4f9d, #ff7b47) !important;
     }
 
     body {
@@ -24,7 +24,7 @@
     /* Header gradient line */
     .header-line {
       height: 30px;
-      background: linear-gradient(135deg, #a64ca6, #c23ae4ff, #e551e5ff, #df507e, #db5184);
+      background:  --ig-gradient: linear-gradient(90deg, #a635d6, #ff4f9d, #ff7b47) !important;
       width: 100%;
       position: fixed; /* stick full width */
       top: 0;
@@ -39,11 +39,11 @@
       left: 0;
       width: 100%;
       height: 48px;
-background: linear-gradient(135deg, 
-  #a100e0ff,   /* neon purple */
-  #cd20f0ff,   /* neon pink */
-  #eb46ccff,   /* neon orange */
-  #ff8f3eff   /* neon yellow */
+      background: linear-gradient(135deg, 
+      #9e49ffff,   /* neon purple */
+      #c43bffff,   /* neon pink */
+      #ff55a1ff,   /* neon orange */
+      #ff7b47   /* neon yellow */
 );
       color: white;
       font-size: 0.9rem;

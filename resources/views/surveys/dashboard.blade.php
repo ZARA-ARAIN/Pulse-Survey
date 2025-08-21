@@ -4,9 +4,9 @@
 <style>
     :root {
       /* Gradient colors */
-      --primary-dark: #6d28d9;   /* Dark Blue */
-      --primary-color: #6d28d9;  /* Medium Blue */
-      --primary-light: #6d28d9;  /* Light Blue */
+      --primary-dark: #a635d6;   /* Dark Blue */
+      --primary-color: #a635d6;  /* Medium Blue */
+      --primary-light: #a635d6;  /* Light Blue */
       --primary-white: #ffffffff;  /* White */
 
       /* Brand palette */
@@ -101,8 +101,15 @@
             <p class="mt-1 text-gray-600">Real-time sentiment insights and analytics</p>
         </div>
         <div class="mt-2 md:mt-0 flex items-center gap-2">
-            <!-- Date selector can go here -->
-        </div>
+<button class="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200">
+    <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" />
+        </svg>
+    </div>
+    <span class="text-sm font-medium">Pulse Survey</span>
+</button>       
+ </div>
     </div>
 
     <!-- Key Metrics Cards -->
@@ -139,8 +146,9 @@
                         <dt class="text-xs font-medium text-gray-500 truncate">Response Rate</dt>
                         <dd class="mt-1">94%</dd>
                     </div>
-                    <span class="status-indicator" style="background-color: var(--positive-color);"></span>
-                </div>
+           <span class="px-2 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                        ↑ 4%
+                    </span>                </div>
                 <div class="mt-3">
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 94%; background-color: var(--positive-color);"></div>
@@ -161,8 +169,10 @@
                         <dt class="text-xs font-medium text-gray-500 truncate">Risk Alerts</dt>
                         <dd class="mt-1">3</dd>
                     </div>
-                    <span class="status-indicator" style="background-color: var(--negative-color);"></span>
-                </div>
+            <span class="px-2 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                        ↑ 4%
+                    </span>      
+                            </div>
                 <div class="mt-3">
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 80%; background-color: var(--negative-color);"></div>
@@ -183,8 +193,9 @@
                         <dt class="text-xs font-medium text-gray-500 truncate">Departments</dt>
                         <dd class="mt-1">4</dd>
                     </div>
-                    <span class="status-indicator" style="background-color: var(--primary-color);"></span>
-                </div>
+          <span class="px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                        ↑ 4%</span>
+                                      </div>
                 <div class="mt-3">
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 100%; background-color: var(--primary-color);"></div>
@@ -242,11 +253,11 @@
                   stroke-dasharray="90 100" stroke-dashoffset="115"
                   class="animate-[rotate_1.8s_ease-in-out]"/>
           <circle cx="18" cy="18" r="16" fill="none"
-                  stroke="#6d28d9" stroke-width="4" stroke-linecap="round"
+                  stroke="#a635d6" stroke-width="4" stroke-linecap="round"
                   stroke-dasharray="90 100" stroke-dashoffset="205"
                   class="animate-[rotate_2.1s_ease-in-out]"/>
           <circle cx="18" cy="18" r="16" fill="none"
-                  stroke="#5b21b6" stroke-width="4" stroke-linecap="round"
+                  stroke="#a635d6" stroke-width="4" stroke-linecap="round"
                   stroke-dasharray="90 100" stroke-dashoffset="295"
                   class="animate-[rotate_2.4s_ease-in-out]"/>
           
@@ -314,24 +325,19 @@
 
 
 
-  <!-- Key Insights -->
+<!-- Key Insights -->
 <div class="w-full col-span-full">
   <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6 w-full">
-    <div class="px-4 py-4 sm:px-6 border-b border-gray-100">
+    <div class="px-4 py-4 sm:px-6 border-b border-gray-100 flex justify-between items-center">
       <h3 class="font-semibold text-gray-900 text-base">Key Insights</h3>
     </div>
     <div class="p-4">
       <div class="space-y-3">
 
         <!-- Positive -->
-        <div class="p-3 rounded-lg w-full" style="background: linear-gradient(90deg, #1e3a8a10, #3b82f610); border-left: 4px solid  #dd901cff;">
+        <div class="p-3 rounded-lg w-full" style="background-color: #E8F5E9; border-left: 4px solid #4CAF50;">
           <div class="flex items-start">
             <div class="flex-shrink-0 mt-0.5">
-              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke=" #dd901cff">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 
-                  11-18 0 9 9 0 0118 0z" />
-              </svg>
             </div>
             <div class="ml-2 flex-1">
               <h4 class="text-sm font-medium text-gray-900 mb-1">Top Positive</h4>
@@ -343,15 +349,9 @@
         </div>
 
         <!-- Critical Alert -->
-        <div class="p-3 rounded-lg w-full" style="background: linear-gradient(90deg, #1e3a8a10, #3b82f610); border-left: 4px solid  #dd901cff;">
+        <div class="p-3 rounded-lg w-full" style="background-color: #FFEBEE; border-left: 4px solid #F44336;">
           <div class="flex items-start">
             <div class="flex-shrink-0 mt-0.5">
-              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke=" #dd901cff">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 
-                  2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 
-                  0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-              </svg>
             </div>
             <div class="ml-2 flex-1">
               <h4 class="text-sm font-medium text-gray-900 mb-1">Critical Alert</h4>
@@ -363,20 +363,9 @@
         </div>
 
         <!-- Emerging Trend -->
-        <div class="p-3 rounded-lg w-full" style="background: linear-gradient(90deg, #1e3a8a10, #3b82f610); border-left: 4px solid  #dd901cff;">
+        <div class="p-3 rounded-lg w-full" style="background-color: #FFF8E1; border-left: 4px solid #FFC107;">
           <div class="flex items-start">
             <div class="flex-shrink-0 mt-0.5">
-              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke=" #dd901cff">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 
-                  0l1.519 4.674a1 1 0 00.95.69h4.915c.969 
-                  0 1.371 1.24.588 1.81l-3.976 2.888a1 1 
-                  0 00-.363 1.118l1.518 4.674c.3.922-.755 
-                  1.688-1.538 1.118l-3.976-2.888a1 1 
-                  0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 
-                  1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 
-                  1 0 00.951-.69l1.519-4.674z" />
-              </svg>
             </div>
             <div class="ml-2 flex-1">
               <h4 class="text-sm font-medium text-gray-900 mb-1">Emerging Trend</h4>
@@ -391,7 +380,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Recommended Actions -->
 <div class="w-full col-span-full">
