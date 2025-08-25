@@ -88,13 +88,13 @@
     }
 
     .profile-img {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      object-fit: cover;
-      background-color: #e5e7eb;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-    }
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #d1d5db; /* solid light grey */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
 
     .logout-icon-btn {
       background: transparent;
@@ -226,11 +226,11 @@
     @click="open = !open" 
     class="profile-btn hover:bg-white/10 rounded px-2 py-1 transition-colors"
   >
-    <img 
-      src="https://ui-avatars.com/api/?name={{ urlencode(ucfirst(Auth::user()->name)) }}&background=random" 
-      alt="Profile" 
-      class="profile-img"
-    >
+   <img 
+  src="https://ui-avatars.com/api/?name={{ urlencode(ucfirst(Auth::user()->name)) }}" 
+  alt="Profile" 
+  class="profile-img"
+>
     <span>{{ ucfirst(Auth::user()->name) }} !</span>
     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -264,12 +264,7 @@
   <div class="flex h-screen" x-data="{ sidebarOpen: false, navigating: false }">
     <!-- Sidebar -->
     <aside :class="sidebarOpen ? 'w-64' : 'sidebar-collapsed'" class="flex flex-col">
-      <div class="sidebar-logo" @click="sidebarOpen = !sidebarOpen">
-        <div class="flex items-center gap-2">
-          <span class="logo-icon text-xl">📊</span>
-          <span class="logo-text select-none" x-show="sidebarOpen">Pulse Survey</span>
-        </div>
-      </div>
+     
 
       <nav class="flex-1 p-2 space-y-1">
         <a href="{{ route('surveys.dashboard') }}" 

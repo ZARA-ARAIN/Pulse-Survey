@@ -82,15 +82,15 @@
                     <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
                     <input id="password" type="password" name="password"
                            class="w-full px-3 py-2 text-sm rounded-md border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-200"
-                           placeholder="••••••••"
+                           placeholder="At least 8 characters required"
                            required>
                 </div>
 
                 <div>
                     <label for="password_confirmation" class="block text-sm font-medium text-gray-700 mb-1">Confirm password</label>
                     <input id="password_confirmation" type="password" name="password_confirmation"
-                           class="w-full px-3 py-2 text-sm rounded-md border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-200"
-                           placeholder="••••••••"
+                           class="w-full px-3 py-2 text-sm rounded-md border border-gray-100 focus:border-purple-500 focus:ring-1 focus:ring-purple-200"
+                           placeholder="Password must match"
                            required>
                 </div>
 
@@ -103,7 +103,7 @@
 
             <div class="mt-6 pt-4 border-t border-gray-200">
                 <p class="text-xs text-gray-600 text-center">
-                    Already have an account?{' '}
+                    Already have an account?
                     <a href="{{ route('login') }}" class="font-medium text-purple-600 hover:text-purple-500 hover:underline">Sign in</a>
                 </p>
             </div>

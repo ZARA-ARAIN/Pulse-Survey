@@ -82,8 +82,8 @@
                         <a href="{{ route('password.request') }}" class="text-xs text-purple-600 hover:text-purple-500 hover:underline">Forgot password?</a>
                     </div>
                     <input id="password" type="password" name="password"
-                           class="w-full px-3 py-2 text-sm rounded-md border border-gray-300 focus:border-purple-500 focus:ring-1 focus:ring-purple-200"
-                           placeholder="••••••••"
+                           class="w-full px-3 py-2 text-sm rounded-md border border-gray-200 focus:border-purple-500 focus:ring-1 focus:ring-purple-200"
+                           placeholder="At least 8 characters required"
                            required>
                 </div>
 
@@ -102,7 +102,7 @@
 
             <div class="mt-6 pt-4 border-t border-gray-200">
                 <p class="text-xs text-gray-600 text-center">
-                    Don't have an account?{' '}
+                    Don't have an account?
                     <a href="{{ route('register') }}" class="font-medium text-purple-600 hover:text-purple-500 hover:underline">Get started</a>
                 </p>
             </div>

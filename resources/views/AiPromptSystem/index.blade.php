@@ -101,30 +101,30 @@
     </div>
     
     <div class="flex-1 overflow-y-auto px-0 py-4">
-        <div class="pb-2 text-sm font-normal text-gray-500 pl-4">Chat History</div>
+        <div class="pb-1 text-m font-bold text-gray-500 pl-6 -mt-3">Chat History</div>
         <div class="space-y-2 px-3">
             <div class="pt-2 px-3 text-xs font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 uppercase tracking-wider">Today</div>
 
-            <a href="#" class="block px-3 py-2.5 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
+            <a href="#" class="block px-3 py-1 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
                 Explain quantum computing
             </a>
-            <a href="#" class="block px-3 py-2.5 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
+            <a href="#" class="block px-3 py-1 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
                 Write a poem about AI
             </a>
-            <a href="#" class="block px-3 py-2.5 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
+            <a href="#" class="block px-3 py-1 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
                 How to make a website?
             </a>
             
             <div class="pt-3 px-3 text-xs font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 uppercase tracking-wider">Yesterday</div>
-            <a href="#" class="block px-3 py-2.5 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
+            <a href="#" class="block px-3 py-1 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
                 Python vs JavaScript
             </a>
-            <a href="#" class="block px-3 py-2.5 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
+            <a href="#" class="block px-3 py-1 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
                 Best practices for React
             </a>
             
             <div class="pt-3 px-3 text-xs font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 uppercase tracking-wider">Previous 7 Days</div>
-            <a href="#" class="block px-3 py-2.5 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
+            <a href="#" class="block px-3 py-1 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 rounded-md transition flex items-center border-l-4 border-transparent hover:border-purple-500">
                 Marketing strategy tips
             </a>
         </div>
@@ -171,12 +171,6 @@
                     <button class="text-gray-500 hover:text-indigo-600 p-1.5 rounded-md hover:bg-gray-100 transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                        </svg>
-                    </button>
-                    
-                    <button class="text-gray-500 hover:text-indigo-600 p-1.5 rounded-md hover:bg-gray-100 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                         </svg>
                     </button>
                     
@@ -420,17 +414,19 @@ function addMessage(text, sender) {
 
                 <!-- Like/Unlike -->
                 <div class="flex justify-start space-x-2 mt-2 ml-1">
-                    <button class="like-btn text-xs px-2 py-1 rounded-lg transition flex items-center hover:bg-yellow-100/50">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
-                        </svg>
-                    </button>
+    <button class="like-btn text-sm px-2 py-1 rounded-lg transition flex items-center hover:bg-yellow-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="#ffc400ff" viewBox="0 0 24 24" stroke="none">
+            <path d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+        </svg>
+    </button>
 
-                    <button class="unlike-btn text-xs px-2 py-1 rounded-lg transition flex items-center hover:bg-yellow-100/50">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5" />
-                        </svg>
-                    </button>
+    <button class="unlike-btn text-sm px-2 py-1 rounded-lg transition flex items-center hover:bg-yellow-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="#ffc400ff" viewBox="0 0 24 24" stroke="none">
+            <path d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"/>
+        </svg>
+    </button>
+</div>
+
                 </div>
             </div>
         `;
@@ -439,14 +435,14 @@ function addMessage(text, sender) {
         setTimeout(() => {
             messageDiv.querySelector('.like-btn')?.addEventListener('click', function() {
                 alert('Liked this message!');
-                this.classList.add('text-indigo-600', 'bg-indigo-100');
-                messageDiv.querySelector('.unlike-btn')?.classList.remove('text-indigo-600', 'bg-indigo-100');
+                this.classList.add('text-yellow-600', 'bg-yellow-100');
+                messageDiv.querySelector('.unlike-btn')?.classList.remove('text-yellow-600', 'bg-yellow-100');
             });
 
             messageDiv.querySelector('.unlike-btn')?.addEventListener('click', function() {
                 alert('Disliked this message!');
-                this.classList.add('text-indigo-600', 'bg-indigo-100');
-                messageDiv.querySelector('.like-btn')?.classList.remove('text-indigo-600', 'bg-indigo-100');
+                this.classList.add('text-yellow-600', 'bg-yellow-100');
+                messageDiv.querySelector('.like-btn')?.classList.remove('text-yellow-600', 'bg-yellow-100');
             });
         }, 10);
     }
