@@ -85,7 +85,7 @@
 
             <div class="mt-6 pt-4 border-t border-gray-200">
                 <p class="text-xs text-gray-600 text-center">
-                    Remember your password?{' '}
+                    Remember your password?
                     <a href="{{ route('login') }}" class="font-medium text-purple-600 hover:text-purple-500 hover:underline">Sign in</a>
                 </p>
             </div>
